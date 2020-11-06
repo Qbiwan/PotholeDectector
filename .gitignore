@@ -1,0 +1,4 @@
+Dataset/
+Dataset224/
+model/
+**/*.bin
