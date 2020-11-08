@@ -41,6 +41,21 @@ Pothole_Detector
 * [images_labeled.csv](Dataset224/images_labeled.csv) is a pandas dataframe created from `resize.py` that has two columns - image paths and labels
 
 
-
 ## Getting Started
+
+### Installation
+
+Create the virtual environent using conda. 
+
+```bash
+$ conda env create -f environment.yml
+$ conda activate PotholeDetector
+
+# then run the python scripts
+$ python resize.py # resize images to 224
+$ python main.py   # train model
+$ ptthon app.py    # serve flask app
+```
+
+
 
