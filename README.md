@@ -31,8 +31,15 @@ Pothole_Detector
 │     ├── app.py                                  <- flask app
 │     ├── main.py                                 <- training    
 │     └── resize.py                               <- resizing image
+├── Demo                                         
+│     └── Demo.gif                                  
 └── README.md
 ```
+## Demo
+
+![Demo](Demo/Demo.gif)
+
+
 ## Data
 
 * The [`Kaggle dataset`](https://www.kaggle.com/atulyakumar98/pothole-detection-dataset) contains two folders - normal and potholes. 'normal' contains images of smooth roads from different angles and 'potholes' contains images of roads with potholes in them. This dataset is stored in `Pothole_Detector/Dataset`
@@ -41,9 +48,7 @@ Pothole_Detector
 * [images_labeled.csv](Dataset224/images_labeled.csv) is a pandas dataframe created from `resize.py` that has two columns - image paths and labels
 
 
-## Getting Started
-
-### Installation
+## Installation
 
 Create the virtual environent using conda. 
 
@@ -52,9 +57,10 @@ $ conda env create -f environment.yml
 $ conda activate PotholeDetector
 
 # then run the python scripts
+$ cd src
 $ python resize.py # resize images to 224
 $ python main.py   # train model
-$ ptthon app.py    # serve flask app
+$ python app.py    # serve flask app
 ```
 
 
